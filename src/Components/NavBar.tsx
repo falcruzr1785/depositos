@@ -7,7 +7,7 @@ export default function NavBar() {
     <MediaQuery minWidth={500}>
     <nav className="navbar">
       <div className="navbar-title">
-        <Link to={'/Inicio'}>
+        <Link to={'./Inicio'}>
           <h2>Depósitos</h2>
         </Link>
       </div>

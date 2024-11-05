@@ -17,7 +17,7 @@ function App() {
    <div style={{ paddingBottom: '3rem' }}>
     
    <Routes>
-        <Route path="/" element={<Index />} />
+        <Route path="/Inicio" element={<Index />} />
         <Route path="/subastas" element={<FormSubasta />} />
         <Route path="/transportes" element={<FormTransporte/>} />
       </Routes>
