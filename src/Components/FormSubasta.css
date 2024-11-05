@@ -1,0 +1,111 @@
+.form {
+    background: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Apilar elementos */
+    align-items: center; /* Centrar elementos horizontalmente */
+    min-height: 100vh;
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; /* Texto blanco */
+    display: block;
+    margin-bottom: 0.5rem; /* Espacio debajo de las etiquetas */
+}
+
+input,
+select {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 200px; /* Ajustar el ancho máximo del campo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 1rem; /* Espacio entre campos */
+    border: 1px solid silver; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center; /* Centrar el texto dentro del input y el textarea */
+    background-color: #333333; /* Fondo gris oscuro en los campos */
+    color: white; /* Texto blanco en los campos */
+}
+
+.detalle {
+    height: 350px; /* Aumentar la altura del campo detalle */
+    resize: vertical; /* Permitir redimensionar verticalmente */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 500px; /* Ajustar el ancho máximo del campo */
+    background-color: #333333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+}
+
+.costos {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar elementos verticalmente */
+    margin-bottom: 1rem; /* Espacio entre el checkbox y el siguiente campo */
+}
+
+.costos input {
+    margin-right: 0.5rem; /* Espacio entre el checkbox y el texto */
+}
+
+.costos span {
+    margin: 0; /* Asegúrate de que no haya margen */
+}
+
+.costos label {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el texto */
+    color: white; /* Texto blanco */
+}
+
+select {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #333333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+    background-position: right 10px center; /* Posición de la imagen */
+    background-size: 1em; /* Tamaño de la imagen */
+}
+
+input:focus,
+.detalle:focus,
+select:focus {
+    border-color: #007bff; /* Cambiar color del borde al enfocarse */
+    outline: none; /* Eliminar borde de enfoque predeterminado */
+}
+
+button {
+    background-color: #007bff; /* Color principal */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición al pasar el mouse */
+    font-size: 16px; /* Tamaño del texto */
+    width: fit-content; /* Botones ocupan todo el ancho */
+    margin-bottom: 2rem; /* Aumentar espacio entre el botón y el siguiente elemento */
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.error {
+    display: block;
+    color: tomato;
+    font-size: x-small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; /* Texto blanco */
+    margin-bottom: 2rem;
+}

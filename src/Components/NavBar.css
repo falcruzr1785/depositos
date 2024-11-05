@@ -1,0 +1,46 @@
+/* General nav styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Fondo oscuro */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none; /* Eliminar puntos de lista */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: white; /* Color de texto de los enlaces */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffcc00; /* Color del enlace al pasar el mouse */
+}
+
+/* Group for deposit options */
+.deposit-options {
+  display: flex;
+  gap: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #777; /* Divider line between "Inicio" and "Subastas/Transporte" */
+}
+
+.deposit-options li {
+  margin: 0;
+}
