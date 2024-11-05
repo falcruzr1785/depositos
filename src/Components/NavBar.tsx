@@ -13,7 +13,7 @@ export default function NavBar() {
       </div>
       
       <ul className='nav-list'>
-        <Link to={'/Inicio'}>
+        <Link to={'./Inicio'}>
           <li>Inicio</li>
         </Link>
         
