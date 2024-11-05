@@ -1,5 +1,5 @@
 import miImagen from './assets/inicio.svg';
-import '../src/Components/Inicio.css';
+import '../src/Components/Index.css';
 
 export default function Inicio() {
   return (
