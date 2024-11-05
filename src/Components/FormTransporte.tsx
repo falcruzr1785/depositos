@@ -6,6 +6,7 @@ import {useForm} from 'react-hook-form'
 import { detalleTxtTransport } from '../utils/auctionTexts';
 import { copiarAlPortapapeles } from '../utils/clipboard';
 import { BANK_INFO } from '../constants/bankingInfo';
+import MediaQuery from 'react-responsive';
 
 
 export default function FormInput() {
@@ -51,6 +52,7 @@ const onSubmit = handleSubmit((data) => {
 
   return (
 
+    <MediaQuery minWidth={500}>
     <div className='form'>
 
       <form onSubmit={onSubmit}> 
@@ -112,5 +114,6 @@ const onSubmit = handleSubmit((data) => {
          {/* Botón para copiar el detalle */}
       <button onClick={()=>copiarAlPortapapeles(detalle)}>Copiar</button>
     </div>
+     </MediaQuery>  
   )
 }

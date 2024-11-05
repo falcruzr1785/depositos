@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../Components/FormSubasta.css'
 import {useForm} from 'react-hook-form'
-
+import MediaQuery from 'react-responsive';
 
 // Importa las funciones de texto desde el archivo de utilidades
 import {detalleTxtAuction } from '../utils/auctionTexts';
@@ -51,7 +51,7 @@ const onSubmit = handleSubmit((data) => {
  
 
   return (
-
+    <MediaQuery minWidth={500}>
     <div className='form'>
 
       <form onSubmit={onSubmit}> 
@@ -125,5 +125,6 @@ const onSubmit = handleSubmit((data) => {
          {/* Botón para copiar el detalle */}
       <button onClick={()=>copiarAlPortapapeles(detalle)}>Copiar</button>
     </div>
+    </MediaQuery>  
   )
 }

@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import './NavBar.css';
+import MediaQuery from "react-responsive";
 
 export default function NavBar() {
   return (
+    <MediaQuery minWidth={500}>
     <nav className="navbar">
       <div className="navbar-title">
         <Link to={'/Inicio'}>
           <h2>Depósitos</h2>
         </Link>
       </div>
-
+      
       <ul className='nav-list'>
         <Link to={'/Inicio'}>
           <li>Inicio</li>
@@ -26,5 +28,6 @@ export default function NavBar() {
         </div>
       </ul>
     </nav>
+    </MediaQuery>  
   );
 }
