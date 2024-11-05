@@ -3,7 +3,7 @@ import './App.css'
 
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
-import Inicio from './Components/inicio'
+import Inicio from './Inicio'
 import { Route, Routes } from 'react-router-dom'
 import FormSubasta from './Components/FormSubasta'
 import FormTransporte from './Components/FormTransporte'
