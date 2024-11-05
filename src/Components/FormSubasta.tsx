@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../Components/FormSubasta.css'
+import '../Components/Form.css'
 import {useForm} from 'react-hook-form'
 import MediaQuery from 'react-responsive';
 

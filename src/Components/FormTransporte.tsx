@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {useForm} from 'react-hook-form'
-
+import '../Components/Form.css'
 
 // Importa las funciones de texto desde el archivo de utilidades
 import { detalleTxtTransport } from '../utils/auctionTexts';
